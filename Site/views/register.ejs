@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</html>
+    <html lang="pt_br"></html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width-device-width, initial-scale=1.0">
+    <div class="p0 m0 width-200px">
+        <title>GymB</title>
+    </div>
+    <link rel="stylesheet" href="/css/style.css">
+
+<%- include('partials/header.ejs') %>
+<br>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card w-75 h-100 bg-secondary">
+        <img src="/images/Peso2.png" class="card-img-top w-25 rounded mx-auto d-block" alt="...">
+        <div class="card-body bg-black fst-italic text-white">
+          <h5 class="card-title">Info:</h5>
+          <p class="card-text">Esta é a Central de Registro! Fique a vontade para realizar seu cadastro em nosso site.</p>
+        </div>
+      </div>
+</div>
+<div class="registro">
+    <form method="post">
+    <h2 class="title">Faça o cadastro:</h2>
+    <label for="username">Nome de usuário</label>
+    <div class="input">
+        <i class="fa fa-envelope fa-user-circle-o" aria-hidden="true"></i>
+        <input id="username" name="username" placeholder="Usuário" type="text">
+    </div>
+    <label for="email">Email</label>
+    <div class="input">
+        <i class="far fa-envelope"></i>
+        <input id="email" name="email" placeholder="E-Mail" type="text">
+    </div>
+    <label for="senha">Senha</label>
+    <div class="input">
+        <i class="fas fa-lock"></i>
+        <input id="senha" name="password" placeholder="Senha" type="password">
+    </div>
+    <br>
+    <div id="btn">
+        <button type="submit">Cadastrar</button>
+        <h5>Já tem um login?</h5><a href="/login">Logar</a>
+    </div>
+    </form>
+    
+
+</div>
+     
+</body>

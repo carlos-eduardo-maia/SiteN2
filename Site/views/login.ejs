@@ -1,0 +1,53 @@
+<%- include('partials/header.ejs') %>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="http://kit.fontawesome.com/ca14b9e588.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card w-75 h-100 bg-secondary">
+            <img src="/images/Peso2.png" class="card-img-top w-25 rounded mx-auto d-block" alt="...">
+            <div class="card-body bg-black fst-italic text-white">
+              <h5 class="card-title">Info:</h5>
+              <p class="card-text">Bem Vindo, Usuário! Fique a vontade para realizar seu login.</p>
+            </div>
+          </div>
+</div>
+
+<div class="login">
+    <form method="post">
+    <h2 class="tittle">Faça o login:</h2>
+    <label for="email">E-Mail</label>
+
+    <div class="input">
+        <i class="far fa-envelope"></i>
+        <input id="email" name="email" placeholder="E-Mail" type="text">
+    </div>
+
+    <label for="senha">Senha</label>
+    <div class="input">
+        <i class="fas fa-lock"></i>
+        <input id="senha" name="password" placeholder="Senha" type="password">
+    </div>
+
+    <br>
+
+    <div id="btn">
+        <button type="submit">Logar</button>
+        <h5>Não tem login?</h5><a href="/register">Cadastrar-se</a>
+    </div>
+    </form>
+    
+
+</div>
+     
+        </body>
